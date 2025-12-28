@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyDailyDevotion</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Daily Devotion</h1>
+      <div class="controls">
+        <button id="prevBtn" aria-label="Previous day">◀</button>
+        <input type="date" id="datePicker" />
+        <button id="nextBtn" aria-label="Next day">▶</button>
+      </div>
+    </header>
+
+    <section id="devotion">
+      <div id="dateLabel" class="date-label"></div>
+      <h2 id="devotionTitle"></h2>
+      <div id="scripture" class="scripture"></div>
+      <article id="content" class="content"></article>
+    </section>
+
+    <footer>
+      <small>Content is loaded from <code>devotions.json</code>. Add entries with keys like "YYYY-MM-DD".</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
